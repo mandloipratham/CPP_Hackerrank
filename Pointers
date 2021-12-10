@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+void update(int *a,int *b) {
+    // Complete this function   
+    int temp; 
+    cout<<*a+*b<<endl;
+    temp = *a-*b;
+    if(temp>=0){
+        cout<<temp<<endl;
+    }
+    else{
+         cout<<-1*temp;
+
+    }
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+   // printf("%d\n%d", a, b);
+
+    return 0;
+}
